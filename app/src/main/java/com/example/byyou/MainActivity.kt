@@ -1,0 +1,24 @@
+package com.example.byyou
+
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val button: Button = findViewById(R.id.bt1)
+        button.setOnClickListener {
+                irAgenda()
+            }
+        }
+
+    private fun irAgenda(){
+        val intent = Intent(this, Agenda::class.java)
+        startActivity(intent)
+    }
+
+}
