@@ -102,4 +102,6 @@
     <string name="medir_por_foto">Medir por foto</string>
     <string name="medida_em_cm">Medida(em cm)</string>
     <string name="tirar_foto">Tirar foto</string>
+    <string name="tirar_foto1">Tirar foto</string>
+    <string name="tire_foto_do_local">Tire foto do local</string>
 </resources>
