@@ -32,7 +32,19 @@ class Foto1 : AppCompatActivity() {
         }else{
             ActivityCompat.requestPermissions(this,const.REQUERID_PERMISSIONS,const.REQUEST_CODE_PERMISSION)
         }
+
+        binding.Capture1.setOnClickListener(){
+            tirarFoto()
+        }
     }
+
+    private fun tirarFoto(){
+
+        //capturar foto e exibir na tela
+
+    }
+
+
 
     private fun IniciarCam(){
 
