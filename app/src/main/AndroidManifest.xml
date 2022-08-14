@@ -18,6 +18,9 @@
         android:theme="@style/Theme.Byyou"
         tools:targetApi="31">
         <activity
+            android:name=".Finalizar"
+            android:exported="false" />
+        <activity
             android:name=".Foto2"
             android:exported="false" />
         <activity
