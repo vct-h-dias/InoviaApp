@@ -1,5 +1,6 @@
 package com.example.byyou
 
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
@@ -43,7 +44,8 @@ class Foto2 : AppCompatActivity() {
     }
 
     private fun irFinalizar(){
-        //finalizar
+        val fim = Intent(this,Finalizar::class.java)
+        startActivity(fim)
     }
 
     private fun tirarFoto(){
