@@ -8,17 +8,25 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
+import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.byyou.databinding.ActivityFoto1Binding
+import java.io.File
+import java.text.SimpleDateFormat
+import java.util.*
+import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
 
 
 class Foto1 : AppCompatActivity() {
 
     private lateinit var binding : ActivityFoto1Binding
     private var imageCapture:ImageCapture? = null
+    private lateinit var Diretorio: File
+    private lateinit var camEx:ExecutorService
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +34,8 @@ class Foto1 : AppCompatActivity() {
         binding = ActivityFoto1Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        Diretorio = getoutputDirectory()
+        camEx = Executors.newSingleThreadExecutor()
 
         if(AllPermissions()){
             Toast.makeText(this, "Todas permissões sucedidas", Toast.LENGTH_SHORT).show()
@@ -43,6 +53,17 @@ class Foto1 : AppCompatActivity() {
         }
 
     }
+
+    private fun getoutputDirectory(): File{
+        val media = externalMediaDirs.firstOrNull()?.let { mFile->
+            File(mFile, resources.getString(R.string.app_name)).apply {
+                mkdirs()
+            }
+
+        }
+        return if (media != null && media.exists())
+            media else filesDir
+    }
     
     private fun irDados(){
         val dados = Intent(this, Dados::class.java)
@@ -51,7 +72,31 @@ class Foto1 : AppCompatActivity() {
 
     private fun tirarFoto(){
 
-        //capturar foto e exibir na tela
+        val imagem = imageCapture ?: null
+        val arquivo = File(Diretorio,SimpleDateFormat(const.FILE_NAME_FORMAT, Locale.getDefault()).format(System.currentTimeMillis())+".jpg")
+
+        val outputOption = ImageCapture.OutputFileOptions.Builder(arquivo).build()
+
+
+        imagem?.takePicture(
+            outputOption, ContextCompat.getMainExecutor(this),
+            object : ImageCapture.OnImageSavedCallback{
+                override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
+
+                    val msg = "Captura  feita"
+
+                    Toast.makeText(this@Foto1, "$msg", Toast.LENGTH_SHORT).show()
+                }
+
+                override fun onError(exception: ImageCaptureException) {
+                    Log.e(const.TAG, "onError: ${exception.message}", exception)
+                }
+
+
+            }
+
+        )
+
 
     }
 
@@ -114,6 +159,11 @@ class Foto1 : AppCompatActivity() {
             ContextCompat.checkSelfPermission(baseContext,it) == PackageManager.PERMISSION_GRANTED
 
         }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        camEx.shutdown()
+    }
 
 
 
