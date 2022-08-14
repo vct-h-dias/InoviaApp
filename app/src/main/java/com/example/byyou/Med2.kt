@@ -1,5 +1,6 @@
 package com.example.byyou
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -17,7 +18,8 @@ class Med2 : AppCompatActivity() {
     }
 
     private fun irFoto2(){
-        //foto2
+        val Ft2 = Intent(this,Foto2::class.java)
+        startActivity(Ft2)
 
     }
 
