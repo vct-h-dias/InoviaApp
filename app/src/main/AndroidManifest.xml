@@ -4,6 +4,7 @@
     package="com.example.byyou">
 
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera2" />
 
     <application
@@ -16,6 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Byyou"
         tools:targetApi="31">
+        <activity
+            android:name=".Med2"
+            android:exported="false" />
+        <activity
+            android:name=".Dados"
+            android:exported="false" />
         <activity
             android:name=".Cam"
             android:exported="false" />

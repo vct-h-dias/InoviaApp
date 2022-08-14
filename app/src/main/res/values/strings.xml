@@ -104,4 +104,13 @@
     <string name="tirar_foto">Tirar foto</string>
     <string name="tirar_foto1">Tirar foto</string>
     <string name="tire_foto_do_local">Tire foto do local</string>
+    <string name="preencha_os_dados_sobre_o_equipamento">Preencha os dados sobre o Equipamento</string>
+    <string name="dados_da_sess_o1">Dados da sessão</string>
+    <string name="comprimento_do_fio">Comprimento do fio</string>
+    <string name="comprimento_do_instrumento">Comprimento do instrumento</string>
+    <string name="tipo_de_fio">Tipo de fio</string>
+    <string name="tipo_de_instrumento">Tipo de instrumento</string>
+    <string name="comprimento">Comprimento</string>
+    <string name="comprimento1">Comprimento</string>
+    <string name="equipamento_abdominoplasty_marking_instrument">Equipamento : Abdominoplasty Marking Instrument</string>
 </resources>

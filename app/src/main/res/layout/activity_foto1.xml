@@ -20,7 +20,7 @@
 
 
     <Button
-        android:id="@+id/toDados1"
+        android:id="@+id/toDados"
         android:layout_width="342dp"
         android:layout_height="53dp"
         android:layout_marginBottom="30dp"
@@ -60,7 +60,7 @@
 
     <androidx.camera.view.PreviewView
         android:id="@+id/cameraPreview"
-        android:layout_width="399dp"
+        android:layout_width="match_parent"
         android:layout_height="704dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,5 +1,6 @@
 package com.example.byyou
 
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
@@ -36,6 +37,16 @@ class Foto1 : AppCompatActivity() {
         binding.Capture1.setOnClickListener(){
             tirarFoto()
         }
+
+        binding.toDados.setOnClickListener(){
+            irDados()
+        }
+
+    }
+    
+    private fun irDados(){
+        val dados = Intent(this, Dados::class.java)
+        startActivity(dados)
     }
 
     private fun tirarFoto(){
