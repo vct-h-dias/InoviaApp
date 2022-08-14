@@ -1,5 +1,6 @@
 package com.example.byyou
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -16,8 +17,8 @@ class Finalizar : AppCompatActivity() {
 
     }
     private fun Agenda(){
-//        val finish = Intent(this,Agenda::class.java)
-//        startActivity(finish)
+        val finish = Intent(this,Agenda::class.java)
+        startActivity(finish)
     }
 
 }
