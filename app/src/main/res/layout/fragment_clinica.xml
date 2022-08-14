@@ -9,14 +9,14 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
-        android:layout_width="89dp"
-        android:layout_height="54dp"
+        android:layout_width="95dp"
+        android:layout_height="60dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="40dp"
         android:padding="10dp"
         app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="20sp"
-        app:cardElevation="0dp"
+        app:cardElevation="4dp"
         app:layout_constraintStart_toEndOf="@+id/textView11"
         app:layout_constraintTop_toBottomOf="@+id/textView2" >
 
@@ -46,14 +46,14 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
-        android:layout_width="89dp"
-        android:layout_height="54dp"
+        android:layout_width="95dp"
+        android:layout_height="60dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="56dp"
         android:padding="10dp"
         app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="20sp"
-        app:cardElevation="0dp"
+        app:cardElevation="4dp"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
@@ -83,14 +83,14 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView4"
-        android:layout_width="89dp"
-        android:layout_height="54dp"
+        android:layout_width="95dp"
+        android:layout_height="60dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:padding="10dp"
         app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="20sp"
-        app:cardElevation="0dp"
+        app:cardElevation="4dp"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/cardView3" >
 
@@ -120,13 +120,13 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView5"
-        android:layout_width="89dp"
-        android:layout_height="54dp"
+        android:layout_width="95dp"
+        android:layout_height="60dp"
         android:layout_marginTop="150dp"
         android:padding="10dp"
         app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="20sp"
-        app:cardElevation="0dp"
+        app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
@@ -157,13 +157,13 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView6"
-        android:layout_width="89dp"
-        android:layout_height="54dp"
+        android:layout_width="95dp"
+        android:layout_height="60dp"
         android:layout_marginTop="48dp"
         android:padding="10dp"
         app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="20sp"
-        app:cardElevation="0dp"
+        app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView5"
@@ -194,14 +194,14 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView7"
-        android:layout_width="89dp"
-        android:layout_height="54dp"
+        android:layout_width="95dp"
+        android:layout_height="60dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="50dp"
         android:padding="10dp"
         app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="20sp"
-        app:cardElevation="0dp"
+        app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardVie8"
         tools:ignore="MissingConstraints" >
@@ -231,14 +231,14 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardVie8"
-        android:layout_width="89dp"
-        android:layout_height="54dp"
+        android:layout_width="95dp"
+        android:layout_height="60dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="50dp"
         android:padding="10dp"
         app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="20sp"
-        app:cardElevation="0dp"
+        app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView9"
         tools:ignore="MissingConstraints" >
@@ -268,14 +268,14 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView9"
-        android:layout_width="89dp"
-        android:layout_height="54dp"
+        android:layout_width="95dp"
+        android:layout_height="60dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
         android:padding="10dp"
         app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="20sp"
-        app:cardElevation="0dp"
+        app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="MissingConstraints" >
@@ -466,9 +466,10 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:text="@string/sess_es_ainda_hoje_na_cl_nica"
         android:textColor="#000000"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

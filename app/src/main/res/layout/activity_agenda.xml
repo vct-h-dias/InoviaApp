@@ -34,6 +34,7 @@
 
 
     <ImageView
+
         android:id="@+id/imageView2"
         android:layout_width="43dp"
         android:layout_height="41dp"
@@ -61,29 +62,30 @@
         />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_toEndOf="@+id/imageView2"
-        android:padding="10dp"
+        android:paddingTop="10dp"
         android:text="@string/pr_xima_sess_o"
         android:textStyle="bold"
 
         />
 
     <androidx.cardview.widget.CardView
+
         android:id="@+id/cardViewP"
         android:layout_width="326dp"
         android:layout_height="156dp"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="60dp"
         android:layout_marginBottom="490dp"
         android:layout_toEndOf="@+id/imageView2"
-        android:padding="10dp"
         app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="20sp"
-        app:cardElevation="0dp" >
+        app:cardElevation="8dp">
 
         <TextView
             android:id="@+id/info_text"
