@@ -1,5 +1,6 @@
 package com.example.byyou
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -18,8 +19,8 @@ class Dados : AppCompatActivity() {
     }
 
     private fun abrirMed2(){
-        //activity Med2
-
+        val aMed2 = Intent(this,Med2::class.java)
+        startActivity(aMed2)
     }
 
 
