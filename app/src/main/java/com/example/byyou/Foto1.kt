@@ -2,8 +2,10 @@ package com.example.byyou
 
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.CameraSelector
@@ -84,6 +86,10 @@ class Foto1 : AppCompatActivity() {
                 override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
 
                     val msg = "Captura  feita"
+                    val uri = Uri.fromFile(arquivo)
+                    binding.picture.setImageURI(uri)
+
+                    CamOff()
 
                     Toast.makeText(this@Foto1, "$msg", Toast.LENGTH_SHORT).show()
                 }
@@ -98,6 +104,12 @@ class Foto1 : AppCompatActivity() {
         )
 
 
+    }
+    
+    private fun CamOff(){
+        binding.Capture1.visibility = View.GONE
+        binding.cameraPreview.visibility = View.GONE
+        binding.toDados.visibility = View.VISIBLE
     }
 
 
