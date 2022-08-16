@@ -6,31 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Agenda">
 
-    <!--
-    <LinearLayout
-        android:id="@+id/header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp">
 
-        <Button
-            android:id="@+id/pessoal"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Agenda Pessoal" />
-
-        <Button
-            android:id="@+id/clinica"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Agenda Clínica" />
-
-
-    </LinearLayout>
-    -->
 
 
     <ImageView

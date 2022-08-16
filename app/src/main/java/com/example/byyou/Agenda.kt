@@ -13,8 +13,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Agenda : AppCompatActivity(), View.OnClickListener, BottomNavigationView.OnNavigationItemSelectedListener{
 
-//    private lateinit var buttonPessoal: Button
-//    private lateinit var buttonClinica: Button
+
 
     private lateinit var pessoalFragment: PessoalFragment
     private lateinit var clinicaFragment: ClinicaFragment
@@ -29,11 +28,7 @@ class Agenda : AppCompatActivity(), View.OnClickListener, BottomNavigationView.O
 
         setContentView(R.layout.activity_agenda)
 
-//        buttonPessoal = findViewById(R.id.pessoal)
-//        buttonPessoal.setOnClickListener(this)
-//
-//        buttonClinica = findViewById(R.id.clinica)
-//        buttonClinica.setOnClickListener(this)
+
 
         pessoalFragment = PessoalFragment()
         clinicaFragment = ClinicaFragment()
@@ -64,14 +59,8 @@ class Agenda : AppCompatActivity(), View.OnClickListener, BottomNavigationView.O
     }
 
     override fun onClick(v: View) {
-//        when(v.id){
-//            R.id.pessoal -> {
-//                setFragment(pessoalFragment)
-//            }
-//            R.id.clinica -> {
-//                setFragment(clinicaFragment)
-//            }
-//        }
+
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
