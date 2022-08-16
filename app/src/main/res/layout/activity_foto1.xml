@@ -62,7 +62,7 @@
     <androidx.camera.view.PreviewView
         android:id="@+id/cameraPreview"
         android:layout_width="match_parent"
-        android:layout_height="704dp"
+        android:layout_height="670dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -84,7 +84,7 @@
     <ImageView
         android:id="@+id/picture"
         android:layout_width="match_parent"
-        android:layout_height="704dp"
+        android:layout_height="670dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -92,5 +92,43 @@
         app:layout_constraintTop_toBottomOf="@+id/textView39"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/tech" />
+
+    <ImageView
+        android:id="@+id/Um"
+        android:layout_width="78dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cameraPreview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/One" />
+
+    <ImageView
+        android:id="@+id/Dois"
+        android:layout_width="78dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cameraPreview"
+        app:layout_constraintStart_toEndOf="@+id/Um"
+        app:srcCompat="@drawable/Two" />
+
+    <ImageView
+        android:id="@+id/Quatro"
+        android:layout_width="78dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cameraPreview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/Four" />
+
+    <ImageView
+        android:id="@+id/Tres"
+        android:layout_width="78dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cameraPreview"
+        app:layout_constraintEnd_toStartOf="@+id/Quatro"
+        app:srcCompat="@drawable/Three" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
