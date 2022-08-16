@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Med2">
+    tools:context=".Med2_1">
 
     <Button
-        android:id="@+id/toFoto2"
+        android:id="@+id/toFoto2_2"
         android:layout_width="342dp"
         android:layout_height="53dp"
         android:layout_marginBottom="90dp"
@@ -18,22 +18,23 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/editTextTextPersonName3_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="@string/medida_em_cm"
         android:inputType="numberDecimal"
+        android:text="50cm"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5_2"
         tools:ignore="Autofill" />
 
     <TextView
-        android:id="@+id/textView45"
+        android:id="@+id/textView45_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -46,7 +47,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView46"
+        android:id="@+id/textView46_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
@@ -60,40 +61,30 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView47"
+        android:id="@+id/textView47_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/luciana_abdominoplastia_sess_o_1_15"
-        app:layout_constraintBottom_toTopOf="@+id/textView46"
+        app:layout_constraintBottom_toTopOf="@+id/textView46_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/editTextTextPersonName5_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="170dp"
         android:ems="10"
         android:hint="@string/local"
         android:inputType="textPersonName"
+        android:text="Circunferência Abdomên"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView46"
+        app:layout_constraintTop_toBottomOf="@+id/textView46_2"
         tools:ignore="Autofill" />
-
-    <Button
-        android:id="@+id/toMedFt2"
-        android:layout_width="342dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="#FAEBD7"
-        android:text="@string/medir_por_foto1"
-        app:layout_constraintBottom_toTopOf="@+id/toFoto2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

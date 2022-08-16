@@ -15,6 +15,18 @@ class Med2 : AppCompatActivity() {
         toFoto2.setOnClickListener{
             irFoto2()
         }
+
+        val btMedFt2: Button = findViewById(R.id.toMedFt2)
+        btMedFt2.setOnClickListener{
+            abrirMeedFt2()
+        }
+
+
+    }
+
+    private fun abrirMeedFt2(){
+        val inte = Intent(this,MedFt2::class.java)
+        startActivity(inte)
     }
 
     private fun irFoto2(){
