@@ -4,38 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Foto2">
+    tools:context=".MedFt1">
 
     <Button
-        android:id="@+id/Capture2"
+        android:id="@+id/Capture1_1"
         android:layout_width="342dp"
         android:layout_height="53dp"
         android:layout_marginBottom="30dp"
         android:backgroundTint="#FAEBD7"
         android:text="@string/tirar_foto1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/cameraPreview_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 
     <Button
-        android:id="@+id/toFinalizar"
+        android:id="@+id/toMed1_1"
         android:layout_width="342dp"
         android:layout_height="53dp"
         android:layout_marginBottom="30dp"
         android:backgroundTint="@color/colorPrimary"
-        android:text="@string/finalizar"
+        android:text="@string/continuar"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView50"
+        android:id="@+id/textView38_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/p_s_sess_o4"
+        android:text="@string/medi_o_por_foto"
         android:textColor="#FF0000"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -44,52 +44,34 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
-        android:id="@+id/textView51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="@string/tire_foto_do_local"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.camera.view.PreviewView
-        android:id="@+id/cameraPreview2"
+        android:id="@+id/cameraPreview_1"
         android:layout_width="match_parent"
         android:layout_height="704dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView50"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView52"
+        android:id="@+id/textView40_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="@string/luciana_abdominoplastia_sess_o_1_15"
-        app:layout_constraintBottom_toTopOf="@+id/textView51"
+        android:text="@string/tire_foto_do_local3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/picture2"
+        android:id="@+id/picture_1"
         android:layout_width="match_parent"
         android:layout_height="704dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView50"
-        app:layout_constraintVertical_bias="1.0" />
+        app:srcCompat="@drawable/tech" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

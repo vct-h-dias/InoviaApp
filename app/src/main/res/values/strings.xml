@@ -116,4 +116,7 @@
     <string name="p_s_sess_o2">Pós sessão</string>
     <string name="p_s_sess_o4">Pós sessão</string>
     <string name="finalizar">Finalizar</string>
+    <string name="medir_por_foto1">Medir por foto</string>
+    <string name="medi_o_por_foto">Medição por foto</string>
+    <string name="tire_foto_do_local3">Tire foto do local</string>
 </resources>
