@@ -101,7 +101,7 @@
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/cameraPreview"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/One" />
+        app:srcCompat="@drawable/tech" />
 
     <ImageView
         android:id="@+id/Dois"
@@ -110,7 +110,7 @@
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/cameraPreview"
         app:layout_constraintStart_toEndOf="@+id/Um"
-        app:srcCompat="@drawable/Two" />
+        app:srcCompat="@drawable/tech" />
 
     <ImageView
         android:id="@+id/Quatro"
@@ -120,7 +120,7 @@
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/cameraPreview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/Four" />
+        app:srcCompat="@drawable/tech" />
 
     <ImageView
         android:id="@+id/Tres"
@@ -129,6 +129,50 @@
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/cameraPreview"
         app:layout_constraintEnd_toStartOf="@+id/Quatro"
-        app:srcCompat="@drawable/Three" />
+        app:srcCompat="@drawable/tech" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Um"
+        app:layout_constraintEnd_toEndOf="@+id/Um"
+        app:layout_constraintStart_toStartOf="@+id/Um"
+        app:layout_constraintTop_toTopOf="@+id/Um" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Dois"
+        app:layout_constraintEnd_toEndOf="@+id/Dois"
+        app:layout_constraintStart_toEndOf="@+id/Um"
+        app:layout_constraintTop_toTopOf="@+id/Dois" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Tres"
+        app:layout_constraintEnd_toEndOf="@+id/Tres"
+        app:layout_constraintStart_toEndOf="@+id/Dois"
+        app:layout_constraintTop_toTopOf="@+id/Tres" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Quatro"
+        app:layout_constraintEnd_toEndOf="@+id/Quatro"
+        app:layout_constraintStart_toStartOf="@+id/Quatro"
+        app:layout_constraintTop_toTopOf="@+id/Quatro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
