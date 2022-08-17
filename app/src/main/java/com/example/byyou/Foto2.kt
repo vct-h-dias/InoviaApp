@@ -71,8 +71,10 @@ class Foto2 : AppCompatActivity() {
         startActivity(fim)
     }
 
+    var cont2 = 0
     private fun tirarFoto(){
 
+        cont2 = cont2 + 1
         val imagem = imageCapture ?: null
         val arquivo = File(Diretorio, SimpleDateFormat(const.FILE_NAME_FORMAT, Locale.getDefault()).format(System.currentTimeMillis())+".jpg")
 
@@ -86,9 +88,28 @@ class Foto2 : AppCompatActivity() {
 
                     val msg = "Captura  feita"
                     val uri = Uri.fromFile(arquivo)
-                    binding.picture2.setImageURI(uri)
+                    if(cont2==1){
 
-                    CamOff()
+                        binding.Um2.setImageURI(uri)
+
+                    }
+                    if(cont2==2){
+
+                        binding.Dois2.setImageURI(uri)
+
+                    }
+                    if(cont2==3){
+
+                        binding.Tres2.setImageURI(uri)
+
+                    }
+                    if(cont2==4){
+
+                        binding.picture2.setImageURI(uri)
+                        binding.Quatro2.setImageURI(uri)
+
+                        CamOff()
+                    }
 
                     Toast.makeText(this@Foto2, "$msg", Toast.LENGTH_SHORT).show()
                 }

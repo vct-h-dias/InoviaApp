@@ -46,10 +46,10 @@ class Foto1 : AppCompatActivity() {
             ActivityCompat.requestPermissions(this,const.REQUERID_PERMISSIONS,const.REQUEST_CODE_PERMISSION)
         }
 
+
         binding.Capture1.setOnClickListener(){
             tirarFoto()
         }
-
         binding.toDados.setOnClickListener(){
             irDados()
         }
@@ -72,8 +72,10 @@ class Foto1 : AppCompatActivity() {
         startActivity(dados)
     }
 
+    var cont = 0
     private fun tirarFoto(){
 
+        cont = cont + 1
         val imagem = imageCapture ?: null
         val arquivo = File(Diretorio,SimpleDateFormat(const.FILE_NAME_FORMAT, Locale.getDefault()).format(System.currentTimeMillis())+".jpg")
 
@@ -87,9 +89,30 @@ class Foto1 : AppCompatActivity() {
 
                     val msg = "Captura  feita"
                     val uri = Uri.fromFile(arquivo)
-                    binding.picture.setImageURI(uri)
 
-                    CamOff()
+                    if(cont==1){
+
+                        binding.Um.setImageURI(uri)
+
+                    }
+                    if(cont==2){
+
+                        binding.Dois.setImageURI(uri)
+
+                    }
+                    if(cont==3){
+
+                        binding.Tres.setImageURI(uri)
+
+                    }
+                    if(cont==4){
+
+                        binding.picture.setImageURI(uri)
+                        binding.Quatro.setImageURI(uri)
+
+                        CamOff()
+                    }
+
 
                     Toast.makeText(this@Foto1, "$msg", Toast.LENGTH_SHORT).show()
                 }

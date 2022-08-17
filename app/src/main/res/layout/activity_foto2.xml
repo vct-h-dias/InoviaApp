@@ -61,7 +61,7 @@
     <androidx.camera.view.PreviewView
         android:id="@+id/cameraPreview2"
         android:layout_width="match_parent"
-        android:layout_height="704dp"
+        android:layout_height="670dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -83,13 +83,97 @@
     <ImageView
         android:id="@+id/picture2"
         android:layout_width="match_parent"
-        android:layout_height="704dp"
+        android:layout_height="670dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView50"
         app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/Um2"
+        android:layout_width="78dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/picture2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/tech" />
+
+    <ImageView
+        android:id="@+id/Dois2"
+        android:layout_width="78dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/picture2"
+        app:layout_constraintStart_toEndOf="@+id/Um2"
+        app:srcCompat="@drawable/tech" />
+
+    <ImageView
+        android:id="@+id/Quatro2"
+        android:layout_width="78dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/picture2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tech" />
+
+    <ImageView
+        android:id="@+id/Tres2"
+        android:layout_width="78dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/picture2"
+        app:layout_constraintEnd_toStartOf="@+id/Quatro2"
+        app:srcCompat="@drawable/tech" />
+
+    <TextView
+        android:id="@+id/textView35_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1_2"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/Um2"
+        app:layout_constraintEnd_toEndOf="@+id/Um2"
+        app:layout_constraintStart_toStartOf="@+id/Um2"
+        app:layout_constraintTop_toTopOf="@+id/Um2" />
+
+    <TextView
+        android:id="@+id/textView36_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_2_22"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Dois2"
+        app:layout_constraintEnd_toEndOf="@+id/Dois2"
+        app:layout_constraintStart_toStartOf="@+id/Dois2"
+        app:layout_constraintTop_toTopOf="@+id/Dois2"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <TextView
+        android:id="@+id/textView372"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_3_2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Tres2"
+        app:layout_constraintEnd_toEndOf="@+id/Tres2"
+        app:layout_constraintStart_toStartOf="@+id/Tres2"
+        app:layout_constraintTop_toTopOf="@+id/Tres2" />
+
+    <TextView
+        android:id="@+id/textView44_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Quatro2"
+        app:layout_constraintEnd_toEndOf="@+id/Quatro2"
+        app:layout_constraintStart_toStartOf="@+id/Quatro2"
+        app:layout_constraintTop_toTopOf="@+id/Quatro2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

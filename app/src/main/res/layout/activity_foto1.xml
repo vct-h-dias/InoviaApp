@@ -99,7 +99,7 @@
         android:layout_height="77dp"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/cameraPreview"
+        app:layout_constraintBottom_toTopOf="@+id/picture"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/tech" />
 
@@ -108,7 +108,7 @@
         android:layout_width="78dp"
         android:layout_height="77dp"
         android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/cameraPreview"
+        app:layout_constraintBottom_toTopOf="@+id/picture"
         app:layout_constraintStart_toEndOf="@+id/Um"
         app:srcCompat="@drawable/tech" />
 
@@ -118,7 +118,7 @@
         android:layout_height="77dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/cameraPreview"
+        app:layout_constraintBottom_toTopOf="@+id/picture"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/tech" />
 
@@ -127,7 +127,7 @@
         android:layout_width="78dp"
         android:layout_height="77dp"
         android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/cameraPreview"
+        app:layout_constraintBottom_toTopOf="@+id/picture"
         app:layout_constraintEnd_toStartOf="@+id/Quatro"
         app:srcCompat="@drawable/tech" />
 
@@ -135,8 +135,9 @@
         android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1"
+        android:text="@string/_1_2_2"
         android:textSize="24sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/Um"
         app:layout_constraintEnd_toEndOf="@+id/Um"
         app:layout_constraintStart_toStartOf="@+id/Um"
@@ -146,29 +147,30 @@
         android:id="@+id/textView36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2"
+        android:text="@string/_2_2_2"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/Dois"
         app:layout_constraintEnd_toEndOf="@+id/Dois"
-        app:layout_constraintStart_toEndOf="@+id/Um"
-        app:layout_constraintTop_toTopOf="@+id/Dois" />
+        app:layout_constraintStart_toStartOf="@+id/Dois"
+        app:layout_constraintTop_toTopOf="@+id/Dois"
+        app:layout_constraintVertical_bias="0.511" />
 
     <TextView
         android:id="@+id/textView37"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3"
+        android:text="@string/_3_2_2"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/Tres"
         app:layout_constraintEnd_toEndOf="@+id/Tres"
-        app:layout_constraintStart_toEndOf="@+id/Dois"
+        app:layout_constraintStart_toStartOf="@+id/Tres"
         app:layout_constraintTop_toTopOf="@+id/Tres" />
 
     <TextView
         android:id="@+id/textView44"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="4"
+        android:text="@string/_4_2_2"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/Quatro"
         app:layout_constraintEnd_toEndOf="@+id/Quatro"
