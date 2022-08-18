@@ -129,4 +129,9 @@
     <string name="_3_2_2">3</string>
     <string name="_2_2">4</string>
     <string name="_4_2_2">4</string>
+    <string name="local_selecionado_costas_C">Local selecionado: Costas</string>
+    <string name="dorsais">Dorsais</string>
+    <string name="sacral">Sacral</string>
+    <string name="lombar">Lombar</string>
+    <string name="cervical">Cervical</string>
 </resources>

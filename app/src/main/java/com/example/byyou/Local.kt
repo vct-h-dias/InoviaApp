@@ -7,26 +7,36 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.byyou.databinding.ActivityLocalBinding
 
 class Local : AppCompatActivity() {
 
+    private lateinit var binding: ActivityLocalBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_local)
+        binding = ActivityLocalBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
 
         val hitbox = findViewById<ImageView>(R.id.tr)
         val hitbox2 = findViewById<ImageView>(R.id.tr2)
 
 
+        var bA = 0
         hitbox.setOnClickListener{
 
             VisibilidadeA()
+            bA = 1
+
 
         }
+
+        var bC = 0
         hitbox2.setOnClickListener{
 
             VisibilidadeC()
+            bC = 1
 
         }
 
@@ -35,7 +45,18 @@ class Local : AppCompatActivity() {
 
 
         bt.setOnClickListener{
-            irAreas()
+            val intent = Intent(this,Areas::class.java)
+
+            if(bA==1&&bC==1){
+                intent.putExtra("bolean", "11")
+                startActivity(intent)
+            }else if(bA==1){
+                intent.putExtra("bolean", "10")
+                startActivity(intent)
+            }else{
+                intent.putExtra("bolean", "1")
+                startActivity(intent)
+            }
         }
 
     }
@@ -65,9 +86,12 @@ class Local : AppCompatActivity() {
     }
 
 
-    private fun irAreas(){
-        val i = Intent(this,Areas::class.java)
-        startActivity(i)
-    }
+
+
+//    private fun irAreas(){
+//        val i = Intent(this,Areas::class.java)
+//        startActivity(i)
+//
+//    }
 
 }
